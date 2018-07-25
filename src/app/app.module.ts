@@ -20,6 +20,7 @@ import { LoginPage } from '../pages/login/login';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
+    HomePage,
     MyApp,
     LoginPage
   ],
