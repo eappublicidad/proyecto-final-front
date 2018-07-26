@@ -12,7 +12,39 @@
 
 </ion-header>
 
-
 <ion-content padding>
+<form (submit)="login($event)" *ngIf="!isLogged">
+  <ion-item>
+
+    <ion-input type="text" name="Nombres" placeholder="Nombres"></ion-input>
+  </ion-item>
+  <ion-item>
+
+    <ion-input type="text" name="Apellidos" placeholder="Apellidos"></ion-input>
+  </ion-item>
+  <ion-item>
+
+    <ion-input type="email" name="Email" placeholder="Email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+
+    <ion-input type="password" name="Contraseña" placeholder="Contraseña"></ion-input>
+  </ion-item>
+  <ion-item>
+
+    <ion-input type="password" name="Confirmar Contraseña" placeholder="Confirmar Contraseña"></ion-input>
+  </ion-item>
+  <button ion-button type="submit" block class="crear">Crear</button>
+</form>
+<div *ngIf="isLogged">
+  <h2>Bienvenido</h2>
+  <p>Nombre: {{user.nombre}}</p>
+  <p>Email: {{user.email}}</p>
+  <button ion-button block (click)="logOut()">Salir</button>
+</div>
+
+
+
 
 </ion-content>
