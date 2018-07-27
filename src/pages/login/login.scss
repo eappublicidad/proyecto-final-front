@@ -3,39 +3,35 @@ ion-content {
     background:url(/assets/imgs/background.jpg) center center no-repeat transparent;
 
   #completo{
-    width:12.75em;
-    height:31.5em;
-    background-color:blue;
+    width:15em;
+    height:auto;
+    margin-top:0;
     text-align: center;
     margin: auto;
-    position: relative;
-  }
-
-  h1{
-   width:172px;
-   height: 33px;
-    margin-top:20vh ;
-    background-color:red;
+    background-color: greenyellow;
     
-
   }
 
 
-  
-
-
-  .crear {
+.crear {
     background-color: $colorsBotonesPrimary;
     width:5.1875em;
     height:2.25em;
+    margin-top:2.3125em;
     text-align:center;
-    margin-top: 2.3125em;
     margin: auto;
 
   }
+  .confirmar{
+    margin-bottom:2.3125em;
+  }
   h2{
+    margin-bottom: 2.5em;
 
 
+  }
+  ::placeholder{
+    text-align: center;
   }
 
 
