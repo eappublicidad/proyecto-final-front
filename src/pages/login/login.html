@@ -36,12 +36,15 @@
 
     <ion-input type="password" name="Confirmar Contraseña" placeholder="Confirmar Contraseña"></ion-input>
   </ion-item>
-  <button ion-button type="submit" block class="crear">Crear</button>
+  <button ion-button type="submit" block class="crear" >Crear</button>
+  
 </form>
 
 
 <p>si ya eres miembro</p>
-<p>Iniciar Sesion</p>
+<p (click)="gotosignin()">Iniciar Sesion</p>
+<p (click)="gotohome()">home</p>
+
 <div *ngIf="isLogged">
   <h2>Bienvenido</h2>
   <p>Nombre: {{user.nombre}}</p>
