@@ -4,17 +4,18 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
 
-  <ion-navbar>
-    <ion-title>Bienvenido a MeetUp</ion-title>
-  </ion-navbar>
 
-</ion-header>
+<ion-content >
+  <div id="completo">
 
-<ion-content padding>
+
+    <h1> Bienvenido a</h1>
+    <h2> MEET UP</h2>
 <form (submit)="login($event)" *ngIf="!isLogged">
   <ion-item>
+
+    
 
     <ion-input type="text" name="Nombres" placeholder="Nombres"></ion-input>
   </ion-item>
@@ -37,6 +38,10 @@
   </ion-item>
   <button ion-button type="submit" block class="crear">Crear</button>
 </form>
+
+
+<p>si ya eres miembro</p>
+<p>Iniciar Sesion</p>
 <div *ngIf="isLogged">
   <h2>Bienvenido</h2>
   <p>Nombre: {{user.nombre}}</p>
@@ -45,6 +50,6 @@
 </div>
 
 
-
+</div>
 
 </ion-content>
