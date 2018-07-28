@@ -7,16 +7,18 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'header',
+  selector: 'app-header',
   templateUrl: 'header.html'
 })
 export class HeaderComponent {
 
-  text: string;
+  title: string;
+  img:string;
 
   constructor() {
     console.log('Hello HeaderComponent Component');
-    this.text = 'Hello World';
+    this.title = 'Hello World';
+    this.img = 'https://picsum.photos/200/300?image=0';
   }
 
 }

@@ -1,3 +1,4 @@
+import { HeaderComponent } from './../pages/home/components/header/header';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -12,7 +13,8 @@ import { LoginPage } from '../pages/login/login';
   declarations: [
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
