@@ -1,7 +1,8 @@
-import { HeaderComponent } from './../pages/home/components/header/header';
+import { HeaderComponent } from '../pages/home/components/header/header';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
@@ -14,6 +15,8 @@ import { ScrollComponent } from '../pages/home/components/scroll/scroll';
 import { SignInPageModule } from '../pages/sign-in/sign-in.module';
 import { FooterPostComponent } from '../pages/home/components/post/footer-post/footer-post';
 import { FooterHomeComponent } from '../pages/home/components/footer-home/footer-home';
+import { Proxy } from './../helpers/proxy/proxy';
+import { UserProxy } from '../helpers/proxy/user.proxy';
 
 @NgModule({
   declarations: [
@@ -25,12 +28,13 @@ import { FooterHomeComponent } from '../pages/home/components/footer-home/footer
     FooterHomeComponent,
     StateComponent,
     PostComponent,
-    ScrollComponent,
+    ScrollComponent
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    SignInPageModule
+    SignInPageModule,
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,12 +45,16 @@ import { FooterHomeComponent } from '../pages/home/components/footer-home/footer
     LoginPage,
     StateComponent,
     PostComponent,
-    ScrollComponent,
+    ScrollComponent
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    HttpClient,
+    Proxy,
+    UserProxy
   ]
 })
-export class AppModule {}
+export class AppModule {
+}

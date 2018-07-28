@@ -1,7 +1,7 @@
 export class API {
   static PROTOCOL = 'http';
   static PORT = 3000;
-  static HOST = 'localhost';
+  static HOST = 'phenixbytes.com';
   static SERVER = `${API.PROTOCOL}://${API.HOST}:${API.PORT}`;
 
   static user = {
@@ -37,8 +37,6 @@ export class API {
   static friends = {
     get: `${API.SERVER}/friends/`,//se utiliza para busqueda, pero no se utilizara
     request: `${API.SERVER}/friends/request`,//esta url captará nuevos amigos
-    delete: `${API.SERVER}/friends/delete`,
-
+    delete: `${API.SERVER}/friends/delete`
   };
-
 }
