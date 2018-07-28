@@ -7,15 +7,15 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'app-post',
-  templateUrl: 'post.html'
+  selector: 'app-state',
+  templateUrl: 'State.html'
 })
-export class PostComponent {
+export class StateComponent {
 
   text: string;
 
   constructor() {
-    console.log('Hello PostComponent Component');
+    console.log('Hello StateComponent Component');
     this.text = 'Hello World';
   }
 

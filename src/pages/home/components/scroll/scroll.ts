@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'scroll',
+  selector: 'app-scroll',
   templateUrl: 'scroll.html'
 })
 export class ScrollComponent {
