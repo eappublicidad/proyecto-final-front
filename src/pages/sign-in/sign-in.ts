@@ -1,3 +1,5 @@
+import { HomePage } from './../home/home';
+import { LoginPage } from './../login/login';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -17,9 +19,10 @@ export class SignInPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SignInPage');
+  goToSignIn(){
+    this.navCtrl.push(LoginPage);
   }
-
+  goToHome(){
+    this.navCtrl.push(HomePage);
+  }
 }

@@ -10,21 +10,15 @@ import { HomePage } from '../home/home';
 export class LoginPage {
 
   constructor(public navCtrl: NavController) {
-
   }
 
-  gotosignin(){
+  goToSignUp(){
     this.navCtrl.push(SignInPage)
     console.log("hey")
   }
 
-  gotohome(){
+  goToHome(){
     this.navCtrl.push(HomePage)
     console.log("hey")
   }
-
-
 }
-
-
-
