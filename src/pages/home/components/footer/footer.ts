@@ -16,7 +16,7 @@ export class FooterComponent {
 
   constructor() {
     console.log('Hello FooterComponent Component');
-    this.text = 'Hello World';
+    this.text = 'Hello ForWorld';
   }
 
 }

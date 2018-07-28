@@ -16,7 +16,7 @@ export class ScrollComponent {
 
   constructor() {
     console.log('Hello ScrollComponent Component');
-    this.text = 'Hello World';
+    this.text = 'Hello ScrollComponent';
   }
 
 }

@@ -16,7 +16,7 @@ export class StateComponent {
 
   constructor() {
     console.log('Hello StateComponent Component');
-    this.text = 'Hello World';
+    this.text = 'Hello StateComponent';
   }
 
 }
