@@ -9,38 +9,28 @@
 
       <div id="formulario">
         <ion-item>
-          <ion-input type="text" name="Nombres" placeholder="Nombres"></ion-input>
+          <ion-input type="text" name="Nombres" placeholder="Email"></ion-input>
         </ion-item>
-        <ion-item>
-
-          <ion-input type="text" name="Apellidos" placeholder="Apellidos"></ion-input>
-        </ion-item>
-        <ion-item>
-
-          <ion-input type="email" name="Email" placeholder="Email"></ion-input>
-        </ion-item>
+        
+        
 
         <ion-item>
 
           <ion-input type="password" name="Contraseña" placeholder="Contraseña"></ion-input>
         </ion-item>
-        <ion-item>
-
-          <ion-input type="password" name="Confirmar Contraseña" placeholder="Confirmar Contraseña"></ion-input>
-        </ion-item>
+        
       </div>
-      <button ion-button type="submit" block class="crear">Crear</button>
+      <p class="olvidaste">¿Olvidaste tu contraseña?</p>
+
+      <button ion-button type="submit" block class="iniciar">Iniciar Sesión</button>
 
     </form>
+    
 
 
-    <p class="miembro">si ya eres miembro</p>
-    <p (click)="gotosignin()" class="botom">Iniciar Sesión</p>
+    <p class="miembro">¿Aún no eres miembro?</p>
+    <p (click)="gotosignin()" class="crear">Crear</p>
     <p (click)="gotohome()">home</p>
-
-  
-   
-
 
   </div>
 
