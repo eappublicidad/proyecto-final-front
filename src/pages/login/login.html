@@ -4,21 +4,44 @@
     <h1> Bienvenido a</h1>
     <h2> MEET UP</h2>
 
-    <form (submit)="login($event)">
-      <ion-item>
-        <ion-input type="email" name="Email" placeholder="Email"></ion-input>
-      </ion-item>
 
-      <ion-item>
-        <ion-input type="password" name="Contraseña" placeholder="Contraseña"></ion-input>
-      </ion-item>
+    <form (submit)="login($event)" *ngIf="!isLogged">
 
-      <button ion-button type="submit" block class="crear">Iniciar sesión</button>
+      <div id="formulario">
+        <ion-item>
+          <ion-input type="text" name="Nombres" placeholder="Nombres"></ion-input>
+        </ion-item>
+        <ion-item>
+
+          <ion-input type="text" name="Apellidos" placeholder="Apellidos"></ion-input>
+        </ion-item>
+        <ion-item>
+
+          <ion-input type="email" name="Email" placeholder="Email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+
+          <ion-input type="password" name="Contraseña" placeholder="Contraseña"></ion-input>
+        </ion-item>
+        <ion-item>
+
+          <ion-input type="password" name="Confirmar Contraseña" placeholder="Confirmar Contraseña"></ion-input>
+        </ion-item>
+      </div>
+      <button ion-button type="submit" block class="crear">Crear</button>
+
     </form>
 
-    <p>si ya eres miembro</p>
-    <p (click)="goToSignUp()">Crear</p>
-    <p (click)="goToHome()">home</p>
+
+    <p class="miembro">si ya eres miembro</p>
+    <p (click)="gotosignin()" class="botom">Iniciar Sesión</p>
+    <p (click)="gotohome()">home</p>
+
+  
+   
+
 
   </div>
+
 </ion-content>

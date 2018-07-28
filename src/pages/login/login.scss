@@ -1,6 +1,7 @@
 
 ion-content {
     background:url(/assets/imgs/background.jpg) center center no-repeat transparent;
+    background-size: cover;
 
   #completo{
     width:15em;
@@ -8,30 +9,85 @@ ion-content {
     margin-top:0;
     text-align: center;
     margin: auto;
-    background-color: greenyellow;
+   
     
   }
 
+  #formulario{
+    
+    margin-bottom: 36px;
+    text-align: center;
+  }
+
+  .item-ios{
+    background:none;
+    width: 205px;
+  }
+  ion-input, ion-textarea{
+    text-align: center;
+
+  }
 
 .crear {
+    text-transform: capitalize;
     background-color: $colorsBotonesPrimary;
     width:5.1875em;
     height:2.25em;
     margin-top:2.3125em;
     text-align:center;
     margin: auto;
-
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 9px 9px 9px 9px;
+    -webkit-box-shadow: 3px 3px 6px  rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 6px  rgba(0,0,0,0.5);
   }
   .confirmar{
     margin-bottom:2.3125em;
   }
+  h1{
+    font-weight: lighter;
+    margin-top:70px;
+    color:white;
+    margin-bottom: 10px;
+  }
   h2{
-    margin-bottom: 2.5em;
-
+    margin-bottom: 30px;
+color:white;
 
   }
   ::placeholder{
     text-align: center;
+    color:green;
+    font-size: 16px;
+    height: 57px;
+  }
+  .item-ios.item-block .item-inner {
+    width: 200px;
+    border-bottom:solid #377ec6 1.5px;
+  }
+  .miembro{
+    color:white;
+    margin-top:55px;
+    font-size: 14px;
+  }
+  .text-input-ios{
+    margin:27px auto 7px auto;
+    text-align: center;
+    color:white;
+  }
+  .botom{
+    font-size: 14px;
+    margin:0px auto;
+    width:100px;
+    padding:2.5px;
+    text-align: center;
+    color:#377ec6;
+    height:26px;
+    border:solid #377ec6 1.5px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 9px 9px 9px 9px;
+    -webkit-box-shadow: 3px 3px 6px  rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 6px  rgba(0,0,0,0.5);
   }
 
 
