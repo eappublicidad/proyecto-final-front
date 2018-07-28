@@ -12,7 +12,7 @@ import { FooterComponent } from '../pages/home/components/footer/footer';
 import { StateComponent } from '../pages/home/components/state/state';
 import { PostComponent } from '../pages/home/components/post/post';
 import { ScrollComponent } from '../pages/home/components/scroll/scroll';
-
+import { SignInPageModule } from '../pages/sign-in/sign-in.module';
 
 @NgModule({
   declarations: [
@@ -23,11 +23,12 @@ import { ScrollComponent } from '../pages/home/components/scroll/scroll';
     FooterComponent,
     StateComponent,
     PostComponent,
-    ScrollComponent
+    ScrollComponent,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    SignInPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,7 +38,7 @@ import { ScrollComponent } from '../pages/home/components/scroll/scroll';
     LoginPage,
     StateComponent,
     PostComponent,
-    ScrollComponent
+    ScrollComponent,
   ],
   providers: [
     StatusBar,
