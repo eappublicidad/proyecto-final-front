@@ -2,23 +2,30 @@
 <ion-header>
   <ion-grid>
 
-    <ion-row>
+    <ion-row align-items-star>
       <ion-col>
-
-        <ion-item>
-          <ion-avatar item-start>
+          <ion-avatar class="avatar">
             <img [src]="img">
           </ion-avatar>
-        </ion-item>
+      </ion-col>
+
+      <ion-col>
+
+        <ion-title>
+            {{title}}
+        </ion-title>
+
 
       </ion-col>
+
+
+      <ion-col>
+       <ion-icon name="notifications"></ion-icon>
+      </ion-col>
+
+
     </ion-row>
-
-    <ion-item>
-      <ion-title>{{title}}</ion-title>
-    </ion-item>
   </ion-grid>
-
 </ion-header>
 
 <ion-content>esfrdse</ion-content>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, style } from '@angular/core';
 
 /**
  * Generated class for the HeaderComponent component.
@@ -18,7 +18,7 @@ export class HeaderComponent {
   constructor() {
     console.log('Hello HeaderComponent Component');
     this.title = 'Hello World';
-    this.img = 'https://picsum.photos/200/300?image=0';
+    this.img = 'https://picsum.photos/200/200?image=0';
   }
 
 }

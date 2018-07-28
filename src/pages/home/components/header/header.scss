@@ -1,3 +1,23 @@
-header {
+ion-header{
+  background-color: $backgroundColors-post;
+  color: $colorsBotonesLight;
+  align-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
+
+}
+.avatar img{
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+.icon{
+  font-size: 3rem;
+  float: right;
+}
+.title{
+  font-size: 4rem;
+  margin: 0 auto;
+  color: white;
 }
