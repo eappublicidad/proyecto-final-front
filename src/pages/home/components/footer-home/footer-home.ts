@@ -7,16 +7,16 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'app-footer',
-  templateUrl: 'footer.html'
+  selector: 'app-footer-home',
+  templateUrl: 'footer-home.html'
 })
-export class FooterComponent {
+export class FooterHomeComponent {
 
   text: string;
 
   constructor() {
-    console.log('Hello FooterComponent Component');
-    this.text = 'Hello ForWorld';
+    console.log('Hello FooterHomeComponent Component');
+    this.text = 'Hello FooterHome';
   }
 
 }

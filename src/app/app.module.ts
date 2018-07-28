@@ -8,11 +8,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
-import { FooterComponent } from '../pages/home/components/footer/footer';
 import { StateComponent } from '../pages/home/components/state/state';
 import { PostComponent } from '../pages/home/components/post/post';
 import { ScrollComponent } from '../pages/home/components/scroll/scroll';
 import { SignInPageModule } from '../pages/sign-in/sign-in.module';
+import { FooterPostComponent } from '../pages/home/components/post/footer-post/footer-post';
+import { FooterHomeComponent } from '../pages/home/components/footer-home/footer-home';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SignInPageModule } from '../pages/sign-in/sign-in.module';
     HomePage,
     LoginPage,
     HeaderComponent,
-    FooterComponent,
+    FooterPostComponent,
+    FooterHomeComponent,
     StateComponent,
     PostComponent,
     ScrollComponent,
@@ -33,7 +35,8 @@ import { SignInPageModule } from '../pages/sign-in/sign-in.module';
   bootstrap: [IonicApp],
   entryComponents: [
     HomePage,
-    FooterComponent,
+    FooterHomeComponent,
+    FooterPostComponent,
     MyApp,
     LoginPage,
     StateComponent,
