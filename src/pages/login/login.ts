@@ -55,6 +55,7 @@ export class LoginPage implements OnInit {
           localStorage.setItem('token', result.content.token);
 
           this.isLogged = true;
+          this.navCtrl.push(HomePage);
         } else {
           this.toastCtrl.create({
             message: result.content,
