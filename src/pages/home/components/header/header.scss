@@ -10,16 +10,16 @@ ion-header{
   align-content: space-between;
   padding-left: 1rem;
   padding-right: 1rem;
-  height: 5rem;
+  height: 5.4rem;
   margin-bottom: 1rem;
 
 }
 h1{
-  font-weight: lighter;
-  margin-top:1rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-top:.5rem;
   color:white;
-  margin-bottom: 10px;
-  margin: 0 auto;
+
   text-align: center;
 }
 
@@ -27,14 +27,10 @@ h1{
   border-radius: 50%;
   width: 3.5rem;
   height: 3.5rem;
+  margin-bottom: .1rem;
 }
 .icon{
   font-size: 3rem;
   float: right;
   color: rgba(181, 0, 224, 0.6);
-}
-.title{
-  font-size: 4rem;
-  margin: 0 auto;
-  color: white;
 }
