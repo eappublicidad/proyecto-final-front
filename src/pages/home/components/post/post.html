@@ -1,4 +1,17 @@
-<div>
-    {{text}}
-</div>
-<app-footer-post></app-footer-post>
+  <ion-content>
+  <ion-grid>
+    <ion-row align-items-star>
+      <ion-col>
+        <ion-title>
+          {{title}}
+        </ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-avatar class="avatar">
+          <img [src]="img">
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+</ion-grid>
+</ion-content>
