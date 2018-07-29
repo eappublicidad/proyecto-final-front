@@ -1,6 +1,5 @@
-scroll {
-
-}
-.content-md {
-    color: #dedede;
+app-scroll{
+    ion-content{
+        background-color: $colorsBotonesBox !important;
+    }
 }

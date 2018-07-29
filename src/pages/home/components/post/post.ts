@@ -13,10 +13,11 @@ import { Component } from '@angular/core';
 export class PostComponent {
 
   text: string;
-
+  img: string;
   constructor() {
     console.log('Hello PostComponent Component');
     this.text = 'Hello PostComponent';
+    this.img = 'https://picsum.photos/200/300/?gravity=east';
   }
 
 }

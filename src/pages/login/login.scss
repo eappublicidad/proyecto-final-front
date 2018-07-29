@@ -1,92 +1,94 @@
-ion-content {
-    background: url(/assets/imgs/background.jpg) center center no-repeat transparent;
-    background-size: cover;
-    #completo {
-        width: 15em;
-        height: auto;
-        text-align: center;
-        margin: auto;
-    }
-    #formulario {
-        margin-bottom: 22px;
-        text-align: center;
-    }
-    .item-ios {
-        background: none;
-        width: 205px;
-    }
-    ion-input,
-    ion-textarea {
-        text-align: center;
-    }
-    .confirmar {
-        margin-bottom: 2.3125em;
-    }
-    h1 {
-        font-weight: lighter;
-        margin-top: 70px;
-        color: white;
-        margin-bottom: 10px;
-    }
-    h2 {
-        margin-bottom: 75px;
-        color: white;
-    }
-    ::placeholder {
-        text-align: center;
-        color: green;
-        font-size: 16px;
-        height: 57px;
-    }
-    .item-ios.item-block .item-inner {
-        width: 200px;
-        border-bottom: solid #377ec6 1.5px;
-    }
-    .miembro {
-        color: white;
-        margin-top: 55px;
-        font-size: 14px;
-        margin-bottom: 16px;
-    }
-    .text-input-ios {
-        margin: 27px auto 7px auto;
-        text-align: center;
-        color: white;
-    }
-    .olvidaste {
-        color: white;
-        font-size: 13px;
-        font-weight: lighter;
-        margin-bottom: 47px;
-    }
-    .crear {
-        text-transform: capitalize;
-        background-color: rgba($color: $colorsBotonesPrimary, $alpha: 0.6);
-        line-height: 30px;
-        font-size: 15px;
-        width: 80px;
-        color: white;
-        height: 30px;
-        margin-top: 2.3125em;
-        text-align: center;
-        margin: auto;
-        -webkit-border-radius: 9px 9px 9px 9px;
-        border-radius: 9px 9px 9px 9px;
-        -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-    }
-    .iniciar {
-        font-size: 14px;
-        margin: 0 auto 130px auto;
-        background-color: transparent;
-        width: 125px;
-        height: 33px;
-        text-align: center;
-        color: white;
-        border: solid #377ec6 1.5px;
-        -webkit-border-radius: 9px 9px 9px 9px;
-        border-radius: 9px 9px 9px 9px;
-        -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+page-login {
+    ion-content {
+        background: url(/assets/imgs/background.jpg) center center no-repeat transparent;
+        background-size: cover;
+        #completo {
+            width: 15em;
+            height: auto;
+            text-align: center;
+            margin: auto;
+        }
+        #formulario {
+            margin-bottom: 22px;
+            text-align: center;
+        }
+        .item-ios {
+            background: none;
+            width: 205px;
+        }
+        ion-input,
+        ion-textarea {
+            text-align: center;
+        }
+        .confirmar {
+            margin-bottom: 2.3125em;
+        }
+        h1 {
+            font-weight: lighter;
+            margin-top: 70px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin-bottom: 75px;
+            color: white;
+        }
+        ::placeholder {
+            text-align: center;
+            color: green;
+            font-size: 16px;
+            height: 57px;
+        }
+        .item-ios.item-block .item-inner {
+            width: 200px;
+            border-bottom: solid #377ec6 1.5px;
+        }
+        .miembro {
+            color: white;
+            margin-top: 55px;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .text-input-ios {
+            margin: 27px auto 7px auto;
+            text-align: center;
+            color: white;
+        }
+        .olvidaste {
+            color: white;
+            font-size: 13px;
+            font-weight: lighter;
+            margin-bottom: 47px;
+        }
+        .crear {
+            text-transform: capitalize;
+            background-color: rgba($color: $colorsBotonesPrimary, $alpha: 0.6);
+            line-height: 30px;
+            font-size: 15px;
+            width: 80px;
+            color: white;
+            height: 30px;
+            margin-top: 2.3125em;
+            text-align: center;
+            margin: auto;
+            -webkit-border-radius: 9px 9px 9px 9px;
+            border-radius: 9px 9px 9px 9px;
+            -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+        .iniciar {
+            font-size: 14px;
+            margin: 0 auto 130px auto;
+            background-color: transparent;
+            width: 125px;
+            height: 33px;
+            text-align: center;
+            color: white;
+            border: solid #377ec6 1.5px;
+            -webkit-border-radius: 9px 9px 9px 9px;
+            border-radius: 9px 9px 9px 9px;
+            -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
     }
 }
