@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { ModalController } from 'ionic-angular';
+import { ModalController, NavController } from 'ionic-angular';
 import { FormPostComponent } from '../form-post/form-post';
-
 /**
  * Generated class for the PostComponent component.
  *
@@ -13,8 +12,8 @@ import { FormPostComponent } from '../form-post/form-post';
   templateUrl: 'State.html'
 })
 export class StateComponent {
-  
-  constructor(private modalCtrl: ModalController) {
+    constructor(private modalCtrl: ModalController, private navCtrl: NavController) {
+ 
   }
   
   openPostForm() {

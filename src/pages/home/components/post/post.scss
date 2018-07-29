@@ -28,6 +28,11 @@ app-post {
 
         ion-row{
             color: white;
+            .row2-col1-right{
+                text-transform: capitalize;
+                text-align: left;
+                font-size: 15px;
+            }
             .row2-col2-right{
                 text-transform: capitalize;
                 text-align: right;

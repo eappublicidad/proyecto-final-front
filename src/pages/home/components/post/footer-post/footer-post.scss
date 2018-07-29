@@ -1,7 +1,49 @@
 app-footer-post{
     ion-grid{
         .likes{
-            color: white;
+            background-color: $backgroundColors-post;
+            ion-label {
+                text-transform: capitalize;
+                color: white;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+            }
+            ion-icon{
+                color: rgba(181, 0, 224, 0.6);
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .comments{
+            background-color: $backgroundColors-post;
+            justify-content: center;
+            ion-label {
+                text-transform: capitalize;
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            ion-icon{
+                color: white;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .share{
+            background-color: $backgroundColors-post;
+            justify-content: center;
+            ion-label {
+                text-transform: capitalize;
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+             }
+             ion-icon{
+                color: white;
+                display: inline-block;
+                vertical-align: middle;
+            }
         }
     }
 }
