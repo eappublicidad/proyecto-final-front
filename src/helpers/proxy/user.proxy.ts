@@ -18,7 +18,7 @@ export class UserProxy extends AbstractProxy implements IProxy {
     save(id: any, data: Object) {
         return new Promise((resolve, reject) => {
             console.log('user-save');
-            var request = false;
+            var request: any;
             if (id) {
                 request = this.consult(`${API.user.save}/${id}`, data, 'put')
             } else {
