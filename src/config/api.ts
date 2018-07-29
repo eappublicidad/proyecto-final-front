@@ -1,7 +1,7 @@
 export class API {
   static PROTOCOL = 'http';
   static PORT = 3000;
-  static HOST = 'localhost';
+  static HOST = 'phenixbytes.com';
   static SERVER = `${API.PROTOCOL}://${API.HOST}:${API.PORT}`;
 
   static user = {
