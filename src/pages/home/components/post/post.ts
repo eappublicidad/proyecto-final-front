@@ -1,6 +1,5 @@
 import { Post } from './../../../../models/post.model';
 import { Component, Input, OnInit } from '@angular/core';
-import * as moment from 'moment';
 
 @Component({
   selector: 'app-post',
