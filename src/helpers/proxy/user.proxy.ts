@@ -15,10 +15,22 @@ export class UserProxy extends AbstractProxy implements IProxy {
                 );
         });
     }
-    save(id: number, data: Object) {
+    save(id: any, data: Object) {
         return new Promise((resolve, reject) => {
             console.log('user-save');
-            resolve();
+            var request = false;
+            if (id) {
+                request = this.consult(`${API.user.save}/${id}`, data, 'put')
+            } else {
+                request = this.consult(API.user.save, data, 'post')
+            }
+
+            request.subscribe(
+                resolve,
+                error => {
+                    reject(error);
+                }
+            );
         });
     }
     delete(id: number) {
@@ -31,7 +43,6 @@ export class UserProxy extends AbstractProxy implements IProxy {
                         reject(error);
                     }
                 );
-            resolve();
         });
     }
     login(params: any) {
