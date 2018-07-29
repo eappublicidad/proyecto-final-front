@@ -1,3 +1,47 @@
-post {
+app-post {
+    ion-content{
+        background-color: #111F2E!important;
 
+    .userPost{
+        background-color: #111F2E!important;
+        .avatar img{
+            border-radius: 50%;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        .row1-col2-right{
+            text-transform: capitalize;
+            text-align: left;
+            color: white;
+            font-size: 20px;
+
+        }
+
+    }
+
+
+    ion-grid {
+        width:333px;
+        background-color:#111F2E; 
+        -webkit-border-radius: 9px 9px 9px 9px;
+        border-radius: 9px 9px 9px 9px;
+
+        ion-row{
+            color: white;
+            .row2-col2-right{
+                text-transform: capitalize;
+                text-align: right;
+                font-size: 11px;
+            }        
+        }
+
+        .imgPost{
+            max-width: 85%;   
+            display: block;
+            margin: 0% auto;
+            border-radius: 10px;
+        }
+    }
+
+    }
 }

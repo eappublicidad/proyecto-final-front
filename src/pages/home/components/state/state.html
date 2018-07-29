@@ -1,3 +1,19 @@
 <ion-content>
-  <button (click)="openPostForm()">publicar</button>
+  <div class="estado">
+    <div class="form">
+      <form (submit)="loginAction($event)">
+
+        <ion-item>
+          <ion-input type="text" name="username" placeholder="Qué tal tu día?"></ion-input>
+        </ion-item>
+
+        <button (click)="openPostForm()">publicar</button>
+      </form>
+    </div>
+
+    <div class="camara">
+      <i class="fas fa-camera"></i>
+    </div>
+  </div>
+
 </ion-content>

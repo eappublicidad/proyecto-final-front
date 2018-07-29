@@ -13,24 +13,13 @@ import { FormPostComponent } from '../form-post/form-post';
   templateUrl: 'State.html'
 })
 export class StateComponent {
-
-  text: string;
-
+  
   constructor(private modalCtrl: ModalController) {
-    console.log('Hello StateComponent Component');
-    this.text = 'Hello StateComponent';
   }
+  
   openPostForm() {
-    console.log('open');
     this.modalCtrl
-      .create(
-        FormPostComponent,
-        {},
-        {
-          cssClass: 'form-modal',
-          showBackdrop: false
-        }
-      )
+      .create(FormPostComponent, {}, { cssClass: 'form-modal', showBackdrop: false })
       .present();
   }
 }
