@@ -1,9 +1,9 @@
 app-post {
     ion-content{
-        background-color: #111f22 !important;
+        background-color: #111F2E!important;
 
     .userPost{
-        background-color: #111f22 !important;
+        background-color: #111F2E!important;
         .avatar img{
             border-radius: 50%;
             width: 3.5rem;
@@ -21,7 +21,10 @@ app-post {
 
 
     ion-grid {
-        background-color: #111f22; 
+        width:333px;
+        background-color:#111F2E; 
+        -webkit-border-radius: 9px 9px 9px 9px;
+        border-radius: 9px 9px 9px 9px;
 
         ion-row{
             color: white;
