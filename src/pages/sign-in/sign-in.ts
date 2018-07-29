@@ -6,6 +6,7 @@ import {
   LoadingController,
   ToastController
 } from 'ionic-angular';
+import { LoginPage } from '../login/login';
 
 @Component({
   selector: 'page-sign-in',
@@ -73,23 +74,19 @@ export class SignInPage {
 
           this.isLogged = true;
         } else {
-          loader.dismiss();
-
           this.toastCtrl.create({
             message: result.content,
-            duration: 30000,
+            duration: 3000,
             position: 'bottom',
             showCloseButton: true,
             closeButtonText: "Cerrar",
             cssClass: 'message error-message'
           }).present();
         }
-      })
-      .catch(console.log);
+      }).catch(console.log);
   }
 
-  goToSignUp() {
-    this.navCtrl.push(SignInPage)
-    console.log("hey")
+  goToSignIn() {
+    this.navCtrl.push(LoginPage);
   }
 }
