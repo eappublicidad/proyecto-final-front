@@ -1,0 +1,16 @@
+<ion-content>
+  <div id="completo">
+    <form (submit)="submitPost($event)">
+      <div id="formulario">
+        <ion-item>
+          <ion-textarea type="text" name="content" placeholder="Que tal tu dia?"></ion-textarea>
+        </ion-item>
+
+      </div>
+
+      <button ion-button block class="cancelar" (click)="cancel()">Cancelar</button>
+      <button ion-button type="submit" block class="iniciar">Publicar</button>
+    </form>
+
+  </div>
+</ion-content>

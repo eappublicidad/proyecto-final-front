@@ -15,8 +15,10 @@ import { ScrollComponent } from '../pages/home/components/scroll/scroll';
 import { SignInPageModule } from '../pages/sign-in/sign-in.module';
 import { FooterPostComponent } from '../pages/home/components/post/footer-post/footer-post';
 import { FooterHomeComponent } from '../pages/home/components/footer-home/footer-home';
-import { Proxy } from './../helpers/proxy/proxy';
+import { Proxy } from '../helpers/proxy/proxy';
 import { UserProxy } from '../helpers/proxy/user.proxy';
+import { PostProxy } from '../helpers/proxy/post.proxy';
+import { FormPostComponent } from '../pages/home/components/form-post/form-post';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { UserProxy } from '../helpers/proxy/user.proxy';
     FooterHomeComponent,
     StateComponent,
     PostComponent,
-    ScrollComponent
+    ScrollComponent,
+    FormPostComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ import { UserProxy } from '../helpers/proxy/user.proxy';
     LoginPage,
     StateComponent,
     PostComponent,
-    ScrollComponent
+    ScrollComponent,
+    FormPostComponent
   ],
   providers: [
     StatusBar,
@@ -53,8 +57,8 @@ import { UserProxy } from '../helpers/proxy/user.proxy';
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     HttpClient,
     Proxy,
-    UserProxy
+    UserProxy,
+    PostProxy
   ]
 })
-export class AppModule {
-}
+export class AppModule {}

@@ -1,12 +1,21 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable()
 export abstract class AbstractProxy {
-    protected headers: Object;
+    protected headers: any;
     constructor(private http: HttpClient) {
+        this.headers = { 'Content-Type': 'application/json' };
     }
+
     protected consult(url: string, data: Object = {}, method: string) {
-        return this.http[method](url, data);
+        const token = localStorage.getItem('token');
+
+        if (token)
+            this.headers['Authorization'] = `Bearer ${token}`;
+
+        const httpOptions = { headers: new HttpHeaders(this.headers) };
+
+        return this.http[method](url, data, httpOptions);
     }
 }

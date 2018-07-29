@@ -1,17 +1,28 @@
-  <ion-content>
+<ion-content>
   <ion-grid>
-    <ion-row align-items-star>
-      <ion-col>
-        <ion-title>
-          {{title}}
-        </ion-title>
-      </ion-col>
+    <ion-item class="userPost">
+  
+      <ion-row align-items-star>
+        <ion-col class="row1-col1-left">
+          <ion-avatar class="avatar">
+            <img [src]="imgFriend">
+          </ion-avatar>
+        </ion-col>
+        <ion-col class="row1-col2-right">{{nameFriend}}</ion-col>
+      </ion-row>
+    </ion-item>
 
-      <ion-col>
-        <ion-avatar class="avatar">
-          <img [src]="img">
-        </ion-avatar>
+    <ion-row>
+      <ion-col class="row2-col1-left">
+        <p>{{messagePost}}</p>
+      </ion-col>
+      <ion-col class="row2-col2-right">
+        <p>{{timePosted}}</p>
       </ion-col>
     </ion-row>
-</ion-grid>
+
+      <img class="imgPost" [src]="imgPost">
+      <app-footer-post></app-footer-post>
+
+  </ion-grid>
 </ion-content>
