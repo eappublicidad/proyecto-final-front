@@ -1,34 +1,38 @@
-app-header {
-    ion-content {
-        background: url(/assets/imgs/background.jpg) center center no-repeat transparent;
-        background-size: cover;
-    }
-    ion-header {
-        background-color: $backgroundColors-post;
-        color: $colorsBotonesLight;
-        align-content: space-between;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        height: 5.4rem;
-        margin-bottom: 1rem;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.95);
-    }
-    h1 {
-        font-weight: 500;
-        font-size: 1.8rem;
-        margin-top: .5rem;
-        color: white;
-        text-align: center;
-    }
-    .avatar img {
-        border-radius: 50%;
-        width: 3.5rem;
-        height: 3.5rem;
-        margin-bottom: .1rem;
-    }
-    .icon {
-        font-size: 3rem;
-        float: right;
-        color: rgba(181, 0, 224, 0.6);
-    }
+app-header{
+
+ion-content{
+  background-size: cover;
+
+}
+ion-header{
+
+  background-color: $backgroundColors-post;
+  color: $colorsBotonesLight;
+  align-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 5.4rem;
+  margin-bottom: 1rem;
+
+}
+h1{
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-top:.5rem;
+  color:white;
+
+  text-align: center;
+}
+
+.avatar img{
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: .1rem;
+}
+.icon{
+  font-size: 3.5rem;
+  float: right;
+  color: rgba(181, 0, 224, 0.6);
+}
 }

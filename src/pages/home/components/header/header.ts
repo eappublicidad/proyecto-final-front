@@ -17,7 +17,7 @@ export class HeaderComponent {
 
   constructor() {
     console.log('Hello HeaderComponent Component');
-    this.title = 'Hoy';
+    this.title = 'HOY';
     this.img = 'https://picsum.photos/200/200?image=0';
   }
 
