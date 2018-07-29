@@ -19,6 +19,8 @@ import { Proxy } from '../helpers/proxy/proxy';
 import { UserProxy } from '../helpers/proxy/user.proxy';
 import { PostProxy } from '../helpers/proxy/post.proxy';
 import { FormPostComponent } from '../pages/home/components/form-post/form-post';
+import { CameraStateComponent } from '../pages/home/components/state/camera-state/camera-state';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { FormPostComponent } from '../pages/home/components/form-post/form-post'
     StateComponent,
     PostComponent,
     ScrollComponent,
-    FormPostComponent
+    FormPostComponent,
+    CameraStateComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,8 @@ import { FormPostComponent } from '../pages/home/components/form-post/form-post'
     StateComponent,
     PostComponent,
     ScrollComponent,
-    FormPostComponent
+    FormPostComponent,
+    CameraStateComponent
   ],
   providers: [
     StatusBar,

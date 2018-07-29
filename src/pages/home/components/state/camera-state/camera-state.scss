@@ -1,0 +1,16 @@
+ion-content{
+    .camera{
+        background: -moz-linear-gradient(top, #b500e0 0%, #5b0070 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #b500e0 0%,#5b0070 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #b500e0 0%,#5b0070 100%);
+        width: 68px;
+        height: 68px;
+    }
+    .galery{
+        background: -moz-linear-gradient(-45deg, #00d2ff 0%, #377ec6 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #00d2ff 0%,#377ec6 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #00d2ff 0%,#377ec6 100%);
+        width: 68px;
+        height: 68px;
+    }
+}
