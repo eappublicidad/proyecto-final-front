@@ -13,10 +13,16 @@ import { Component } from '@angular/core';
 export class FooterPostComponent {
 
   text: string;
+  qtylikes:number;
+  qtycomments:number;
+  qtyshare:number;
 
   constructor() {
     console.log('Hello FooterPostComponent Component');
     this.text = 'Hello FooterrPost';
+    this.qtylikes = 5;
+    this.qtycomments =2;
+    this.qtyshare =1;
   }
 
 }
