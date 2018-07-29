@@ -1,7 +1,3 @@
-<!-- Generated template for the ScrollComponent component -->
 <ion-content>
-    <div>
-        {{text}}
-    </div>
-    <app-post></app-post>
+    <app-post *ngFor="let post of posts" [post]="post"></app-post>
 </ion-content>

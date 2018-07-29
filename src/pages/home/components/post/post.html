@@ -1,11 +1,11 @@
 <ion-content>
   <ion-grid>
+
     <ion-item class="userPost">
-  
       <ion-row align-items-star>
         <ion-col class="row1-col1-left">
           <ion-avatar class="avatar">
-            <img [src]="imgFriend">
+            <img [src]="imgFriend" *ngIf="authorHasPhoto()">
           </ion-avatar>
         </ion-col>
         <ion-col class="row1-col2-right">{{nameFriend}}</ion-col>
@@ -14,15 +14,14 @@
 
     <ion-row>
       <ion-col class="row2-col1-left">
-        <p>{{messagePost}}</p>
+        <p>{{this.post.content}}</p>
       </ion-col>
       <ion-col class="row2-col2-right">
-        <p>{{timePosted}}</p>
+        <p>{{agoTime}}</p>
       </ion-col>
     </ion-row>
 
-      <img class="imgPost" [src]="imgPost">
-      <app-footer-post></app-footer-post>
-
+    <img class="imgPost" [src]="this.post.Photo.path" *ngIf="hasPhoto()">
+    <app-footer-post></app-footer-post>
   </ion-grid>
 </ion-content>

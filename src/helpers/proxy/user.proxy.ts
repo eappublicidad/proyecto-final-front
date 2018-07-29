@@ -7,12 +7,7 @@ export class UserProxy extends AbstractProxy implements IProxy {
         return new Promise((resolve, reject) => {
             console.log('user-get');
             this.consult(`${API.user.get}/${id}`, {}, 'get')
-                .subscribe(
-                    resolve,
-                    error => {
-                        reject(error);
-                    }
-                );
+                .subscribe(resolve, reject);
         });
     }
     save(id: any, data: Object) {
@@ -25,49 +20,28 @@ export class UserProxy extends AbstractProxy implements IProxy {
                 request = this.consult(API.user.save, data, 'post')
             }
 
-            request.subscribe(
-                resolve,
-                error => {
-                    reject(error);
-                }
-            );
+            request.subscribe(resolve, reject);
         });
     }
     delete(id: number) {
         return new Promise((resolve, reject) => {
             console.log('user-delete');
             this.consult(API.user.delete, { id }, 'delete')
-                .subscribe(
-                    resolve,
-                    error => {
-                        reject(error);
-                    }
-                );
+                .subscribe(resolve, reject);
         });
     }
     login(params: any) {
         return new Promise((resolve, reject) => {
             console.log('user-login');
             this.consult(API.user.login, params, 'post')
-                .subscribe(
-                    resolve,
-                    error => {
-                        reject(error);
-                    }
-                );
+                .subscribe(resolve, reject);
         });
     }
     logout(token: string) {
         return new Promise((resolve, reject) => {
             console.log('user-logout');
             this.consult(API.user.logput, { token }, 'delete')
-                .subscribe(
-                    resolve,
-                    error => {
-                        reject(error);
-                    }
-                );
-            resolve();
+                .subscribe(resolve, reject);
         });
     }
 }

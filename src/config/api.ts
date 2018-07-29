@@ -1,11 +1,11 @@
 export class API {
   static PROTOCOL = 'http';
   static PORT = 3000;
-  static HOST = 'phenixbytes.com';
+  static HOST = 'localhost';
   static SERVER = `${API.PROTOCOL}://${API.HOST}:${API.PORT}`;
 
   static user = {
-    get: `${API.SERVER}/user/`,
+    get: `${API.SERVER}/user`,
     save: `${API.SERVER}/user/save`,
     search: `${API.SERVER}/user/search`,
     delete: `${API.SERVER}/user/delete`,
@@ -15,7 +15,7 @@ export class API {
     passwordUpdate: `${API.SERVER}/user/password-update` //enviara un correo confirmando el login
   };
   static post = {
-    get: `${API.SERVER}/post/`,
+    get: `${API.SERVER}/post`,
     save: `${API.SERVER}/post/save`,
     delete: `${API.SERVER}/post/delete`,
     like: {
@@ -30,12 +30,12 @@ export class API {
     }
   };
   static file = {
-    get: `${API.SERVER}/file/`,
+    get: `${API.SERVER}/file`,
     upload: `${API.SERVER}/file/upload`
 
   };
   static friends = {
-    get: `${API.SERVER}/friends/`,//se utiliza para busqueda, pero no se utilizara
+    get: `${API.SERVER}/friends`,//se utiliza para busqueda, pero no se utilizara
     request: `${API.SERVER}/friends/request`,//esta url captará nuevos amigos
     delete: `${API.SERVER}/friends/delete`
   };

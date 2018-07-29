@@ -16,6 +16,9 @@ export abstract class AbstractProxy {
 
         const httpOptions = { headers: new HttpHeaders(this.headers) };
 
-        return this.http[method](url, data, httpOptions);
+        if (method === 'get')
+            return this.http[method](url, httpOptions);
+        else
+            return this.http[method](url, data, httpOptions);
     }
 }
