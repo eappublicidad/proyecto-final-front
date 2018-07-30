@@ -1,52 +1,78 @@
 app-post {
-    
+
         background-color: #111F2E!important;
-       
-        margin: 14px;
+        margin-top: 14px;
+        margin-right: 14px;
+
+    //userPost es el header dentro del post
     .userPost{
+
         background-color: #111F2E!important;
+        width: 95%;
+        padding-left: 20px;
+
+        //imagen en el header del post
         .avatar img{
             border-radius: 50%;
             width: 3.5rem;
             height: 3.5rem;
+            margin-left: 20px;
+
         }
+        //nombre usuario post
         .row1-col2-right{
             text-transform: capitalize;
             text-align: left;
             color: white;
             font-size: 20px;
-
+            margin-left: -20px;
+            margin-top: 4px;
         }
+
+        .row2-col2-right{
+            margin-left: 80px;
+            margin-top: 10px;
+            float: right;
+            text-align: right;
+            font-size: 10px;
+            width: 15%;
+        }
+
+          //cierre del header dentro del post
 
     }
 
-
+    //post debajo de la línea
     ion-grid {
-        width:333px;
-        background-color:#111F2E; 
+
+        background-color:#111F2E!important;
         -webkit-border-radius: 9px 9px 9px 9px;
         border-radius: 9px 9px 9px 9px;
 
+        //texto del post alineado con la hora desde la que se posteo el contenido
         ion-row{
             color: white;
-            .row2-col1-right{
-                text-transform: capitalize;
-                text-align: left;
-                font-size: 15px;
+
+            .row2-col1-left{
+                text-align: justify;
+                font-size: 14px;
+                color:white;
+                margin-left: 40px;
+                margin-right: 40px;
+
+
             }
-            .row2-col2-right{
-                text-transform: capitalize;
-                text-align: right;
-                font-size: 11px;
-            }        
+
+
         }
 
+
         .imgPost{
-            max-width: 85%;   
+            max-width: 85%;
             display: block;
             margin: 0% auto;
             border-radius: 10px;
         }
     }
 
-} 
+}

@@ -1,60 +1,43 @@
 app-state {
 
    -moz-box-sizing: border-box;
- 
+
   .box-content{
-    margin-top:7.0rem;
+    margin-top:3.8rem;
     padding: .5rem;
     border-radius: 1rem;
-    margin-bottom:12px;
-    width:333px;
-    height: 6rem;
+    margin-bottom:.3rem;
+    width:38.3rem;
+    height: 7rem;
     background: linear-gradient(135deg, #00d2ff 0%, #377eb6 100%);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
-    margin-left:auto;
-    margin-right:auto;
-   
-  
 
 
     ion-icon{
-      margin-top: 1rem;
+      margin-top: 1.2rem;
       float: right;
       font-size: 3rem;
       color: white;
 
     }
-    .button-content button{
-      background-color: rgb(181, 0, 224);
-      border: solid .2rem rgba(181, 0, 224, 0.6);
-      color: white;
-      width: 8rem;
 
-      border-radius: 9px 9px 9px 9px;
-      -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-      box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, 0.5);
-      float: left;
-      margin-top: 4.5rem;
-
-    }
 
 
     form, ion-input, ::placeholder{
-    height: 2rem;
+
     margin-top: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color:white;
     left:0 auto;
     }
 
     .text-content{
-
-      margin-top:5px;
+      margin-top:.5rem;
       margin-left:12px;
       display: inline-block;
       float:left;
-      column-fill: balance;
+
     }
 
   }

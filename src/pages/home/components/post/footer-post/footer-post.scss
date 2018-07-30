@@ -1,10 +1,15 @@
 app-footer-post{
     ion-grid{
-
-        
-        
+          
+        //contenido likes
         .likes{
             background-color: $backgroundColors-post;
+            justify-content: center;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+
+            //numero likes
             ion-label {
                 text-transform: capitalize;
                 color: white;
@@ -12,40 +17,61 @@ app-footer-post{
                 vertical-align: middle;
                 text-align: center;
             }
+            //icono likes
             ion-icon{
+                margin-left:-2px;
                 color: rgba(181, 0, 224, 0.6);
                 display: inline-block;
                 vertical-align: middle;
+                text-align: left;
             }
         }
+        //contenido comentarios
         .comments{
             background-color: $backgroundColors-post;
             justify-content: center;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+            //numero comentarios
             ion-label {
+
                 text-transform: capitalize;
                 text-align: center;
                 display: inline-block;
                 vertical-align: middle;
             }
+            //icono comentarios
             ion-icon{
+                margin-left:-2px;
                 color: white;
                 display: inline-block;
                 vertical-align: middle;
+                text-align: left;
             }
         }
+        //contenido compartir
         .share{
             background-color: $backgroundColors-post;
             justify-content: center;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+
             ion-label {
                 text-transform: capitalize;
                 text-align: center;
                 display: inline-block;
                 vertical-align: middle;
+
+
              }
              ion-icon{
+                margin-left:-2px;
                 color: white;
                 display: inline-block;
                 vertical-align: middle;
+                text-align: left;
             }
         }
     }

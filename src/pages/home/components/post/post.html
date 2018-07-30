@@ -6,16 +6,19 @@
           <img [src]="imgFriend" *ngIf="authorHasPhoto()">
         </ion-avatar>
       </ion-col>
-      <ion-col class="row1-col2-right">{{nameFriend}}</ion-col>
+
+      <ion-col class="row1-col2-right">
+        {{nameFriend}}
+      </ion-col>
+      <ion-col class="row2-col2-right">
+        <p>{{agoTime}}</p>
+      </ion-col>
     </ion-row>
   </ion-item>
 
   <ion-row>
-    <ion-col class="row2-col1-left">
+    <ion-col class="row2-col1-left col-6">
       <p>{{this.post.content}}</p>
-    </ion-col>
-    <ion-col class="row2-col2-right">
-      <p>{{agoTime}}</p>
     </ion-col>
   </ion-row>
 
