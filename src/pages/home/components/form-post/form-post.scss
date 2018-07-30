@@ -1,26 +1,65 @@
 #completo {
     form {
+
+
+        
+    form, ion-input, ::placeholder{
+
+        margin-top: 0;
+        font-size: 16px;
+        font-weight: 100;
+        border-radius: 9px;
+        color:#00d2ff;
+        left:0 auto;
+        }
+
         margin-top: calc(50% + 73px);
         .iniciar {
+            margin-top: 15px;
+            height: 30px;
+            display: flex;
+            vertical-align: top;
+            width: 100px;
+            text-transform: capitalize;
+            font-weight:100;
             background: -moz-linear-gradient(-45deg, #00d2ff 0%, #377ec6 100%);
             /* FF3.6-15 */
             background: -webkit-linear-gradient(-45deg, #00d2ff 0%, #377ec6 100%);
             /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(135deg, #00d2ff 0%, #377ec6 100%);
-            font-size: 17px;
+            font-size: 15px;
+        }
+        .botones{
+
+            background-color: #fff;
+            margin: auto;
+            display: flex;
+            margin-left: 20%;
+            align-content:center;
+            justify-content: middle;
         }
         ion-icon {
+
+            vertical-align: top;
+            display: flex;
             width: 45px;
             height: 45px;
             color: white;
         }
         .cancelar {
+             margin-left: 12px;
+            margin-top: 15px;
+            height: 30px;
+            width: 100px;
+            text-transform: capitalize;
+            font-weight:100;
+            width:100px;
             background: -moz-linear-gradient(-45deg, #00d2ff 0%, #377ec6 100%);
             /* FF3.6-15 */
             background: -webkit-linear-gradient(-45deg, #00d2ff 0%, #377ec6 100%);
             /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(135deg, #00d2ff 0%, #377ec6 100%);
-            font-size: 17px;
+            font-size: 15px;
         }
     }
 }

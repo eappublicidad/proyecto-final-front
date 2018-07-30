@@ -1,5 +1,5 @@
 app-post {
-
+        width:333px;
         background-color: #111F2E!important;
         margin-top: 14px;
         margin-right: 14px;
@@ -54,11 +54,14 @@ app-post {
             color: white;
 
             .row2-col1-left{
-                text-align: justify;
-                font-size: 14px;
+                text-align: left;
+                font-size: 13px;
                 color:white;
                 margin-left: 40px;
                 margin-right: 40px;
+                line-height: 20px;
+                font-weight: 100;
+
 
 
             }
