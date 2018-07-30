@@ -13,6 +13,10 @@ page-home {
         ion-icon{
             width: 25px;
         } 
-
+            
+        
+        ion-fab{
+        $fab-md-box-shadow-activated:	0 5px 15px 0 rgba(0, 0, 0, .4), 0 4px 7px 0 rgba(0, 0, 0, .1)
+        }   
     }
 }

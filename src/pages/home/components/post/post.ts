@@ -25,10 +25,10 @@ export class PostComponent implements OnInit {
   }
   ngOnInit(): void {
    if (this.post.Photo && this.post.Photo.path)
-      this.post.Photo.path = this.post.Photo.path.replace('file/private', 'file/private/200x300');
+      this.post.Photo.path = this.post.Photo.path.replace('file/private', 'file/private/285x190');
 
     if (this.post.User && this.post.User.Photo && this.post.User.Photo.path)
-      this.imgFriend = this.post.User.Photo.path.replace('file/private', 'file/private/200x300');
+      this.imgFriend = this.post.User.Photo.path.replace('file/private', 'file/private/32x32');
 
     if (this.post.User)
       this.nameFriend = this.post.User.firstName;

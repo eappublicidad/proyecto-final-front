@@ -23,6 +23,7 @@ import { CameraStateComponent } from '../pages/home/components/state/camera-stat
 
 
 
+
 @NgModule({
   declarations: [
     MyApp,
