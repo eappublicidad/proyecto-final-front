@@ -1,0 +1,28 @@
+app-footer-home{
+
+
+    .footer{
+    height: 45px;
+    background-color: $colorsBotonesBox;
+    -webkit-box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.9);
+        box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.9);
+       line-height: 50px;
+        
+    }
+
+    #container{
+       
+        top:10px;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 290px;
+        height:25px;
+        
+       
+    }
+    ion-icon{
+        color:white;
+        font-size: 25px;
+    }
+}

@@ -22,6 +22,7 @@ import { FormPostComponent } from '../pages/home/components/form-post/form-post'
 import { CameraStateComponent } from '../pages/home/components/state/camera-state/camera-state';
 
 
+
 @NgModule({
   declarations: [
     MyApp,
