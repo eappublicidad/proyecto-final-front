@@ -2,14 +2,12 @@
 <div class="box-content">
 
 
-      <div class="button-content clearfix" float-left padding-bottom>
-        <button (click)="openPostForm()">Publicar</button>
-      </div>
+     
 
 
     <div class="text-content clearfix">
       <form (submit)="loginAction($event)" float-left padding-bottom>
-        <ion-input type="text" name="username" placeholder="¿Qué tal tu día?"></ion-input>
+        <ion-input type="text" name="username" placeholder="¿Qué tal tu día?" (click)="openPostForm()"></ion-input>
       </form>
     </div>
 
