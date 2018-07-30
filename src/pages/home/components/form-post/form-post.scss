@@ -1,29 +1,26 @@
-    #completo{
-        form{
-            margin-top: 224px;
-        .iniciar{
-            background: -moz-linear-gradient(-45deg, #00d2ff 0%, #377ec6 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(-45deg, #00d2ff 0%,#377ec6 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(135deg, #00d2ff 0%,#377ec6 100%);
+#completo {
+    form {
+        margin-top: calc(50% + 73px);
+        .iniciar {
+            background: -moz-linear-gradient(-45deg, #00d2ff 0%, #377ec6 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, #00d2ff 0%, #377ec6 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, #00d2ff 0%, #377ec6 100%);
             font-size: 17px;
         }
-        ion-icon{
-
+        ion-icon {
             width: 45px;
             height: 45px;
-            color:white;
+            color: white;
         }
-
-
-
-
-
-    
-        .cancelar{
-            background: -moz-linear-gradient(-45deg, #00d2ff 0%, #377ec6 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(-45deg, #00d2ff 0%,#377ec6 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(135deg, #00d2ff 0%,#377ec6 100%);
+        .cancelar {
+            background: -moz-linear-gradient(-45deg, #00d2ff 0%, #377ec6 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, #00d2ff 0%, #377ec6 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, #00d2ff 0%, #377ec6 100%);
             font-size: 17px;
         }
     }
-    }
+}
