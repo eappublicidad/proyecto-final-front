@@ -1,9 +1,16 @@
 app-header {
-    ion-content {
+    
         background: url(/assets/imgs/background.jpg) center center no-repeat transparent;
         background-size: cover;
+    
+    ion-grid{
+        display: flex;
+        vertical-align: middle;
+        
+        height: 40px;
     }
     ion-header {
+        
         vertical-align: middle;
         background-color: $backgroundColors-post;
         color: $colorsBotonesLight;
@@ -17,23 +24,24 @@ app-header {
     h1 {
         font-weight: 500;
         font-size: 2rem;
-        margin-top: 1.8rem;
+        
         color: white;
         text-align: center;
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
     }
     .avatar img {
-        margin-top: 30px;
+        
         border-radius: 50%;
         width: 36px;
         height:36px;
         
     }
-    .icon {
-        margin-top:25px;
+    ion-icon {
+       
         font-size: 3rem;
         float: right;
         color: rgba(181, 0, 224, 0.6);
     }
+
 }
