@@ -14,11 +14,9 @@ export class FormPostComponent {
     private toastCtrl: ToastController,
     private proxy: Proxy
   ) {
-    console.log('postform');
   }
 
   submitPost(event) {
-    console.log('submit');
     var params = {};
     var fields = ['content'];
     var params = {};
@@ -37,11 +35,10 @@ export class FormPostComponent {
     this.viewCtrl.dismiss();
     this.proxy.post.save(null, params)
       .then((result: { status: boolean, content: any }) => {
-        console.log(result);
         loader.dismiss();
+
         if (result.status) {
           const message = result.content[0];
-          const model = result.content[1];
 
           this.toastCtrl.create({
             message: message.content,
