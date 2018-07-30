@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { ViewController, NavController, LoadingController, ToastController } from 'ionic-angular';
 import { Proxy } from '../../../../helpers/proxy/proxy';
 
@@ -6,6 +6,7 @@ import { Proxy } from '../../../../helpers/proxy/proxy';
   selector: 'app-form-post',
   templateUrl: 'form-post.html'
 })
+
 export class FormPostComponent {
   constructor(
     public viewCtrl: ViewController,
@@ -32,13 +33,13 @@ export class FormPostComponent {
 
     loader.present();
 
-    this.viewCtrl.dismiss();
     this.proxy.post.save(null, params)
       .then((result: { status: boolean, content: any }) => {
         loader.dismiss();
-
+        let model = false
         if (result.status) {
           const message = result.content[0];
+          model = result.content[1];
 
           this.toastCtrl.create({
             message: message.content,
@@ -49,6 +50,7 @@ export class FormPostComponent {
             cssClass: 'message info-message'
           }).present();
         }
+        this.viewCtrl.dismiss(model);
       }).catch(console.log);
   }
   cancel() {

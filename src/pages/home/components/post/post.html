@@ -1,26 +1,24 @@
-
-  <ion-grid>
-
-    <ion-item class="userPost">
-      <ion-row align-items-star>
-        <ion-col class="row1-col1-left">
-          <ion-avatar class="avatar">
-            <img [src]="imgFriend" *ngIf="authorHasPhoto()">
-          </ion-avatar>
-        </ion-col>
-        <ion-col class="row1-col2-right">{{nameFriend}}</ion-col>
-      </ion-row>
-    </ion-item>
-
-    <ion-row>
-      <ion-col class="row2-col1-left">
-        <p>{{this.post.content}}</p>
+<ion-grid>
+  <ion-item class="userPost">
+    <ion-row align-items-star>
+      <ion-col class="row1-col1-left">
+        <ion-avatar class="avatar">
+          <img [src]="imgFriend" *ngIf="authorHasPhoto()">
+        </ion-avatar>
       </ion-col>
-      <ion-col class="row2-col2-right">
-        <p>{{agoTime}}</p>
-      </ion-col>
+      <ion-col class="row1-col2-right">{{nameFriend}}</ion-col>
     </ion-row>
+  </ion-item>
 
-    <img class="imgPost" [src]="this.post.Photo.path" *ngIf="hasPhoto()">
-    <app-footer-post></app-footer-post>
-  </ion-grid>
+  <ion-row>
+    <ion-col class="row2-col1-left">
+      <p>{{this.post.content}}</p>
+    </ion-col>
+    <ion-col class="row2-col2-right">
+      <p>{{agoTime}}</p>
+    </ion-col>
+  </ion-row>
+
+  <img class="imgPost" [src]="this.post.Photo.path" *ngIf="hasPhoto()">
+  <app-footer-post></app-footer-post>
+</ion-grid>

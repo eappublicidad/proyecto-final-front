@@ -24,7 +24,7 @@ export class PostComponent implements OnInit {
     return this.post.User && this.post.User.Photo && this.post.User.Photo.path || false;
   }
   ngOnInit(): void {
-   if (this.post.Photo && this.post.Photo.path)
+    if (this.post.Photo && this.post.Photo.path)
       this.post.Photo.path = this.post.Photo.path.replace('file/private', 'file/private/285x190');
 
     if (this.post.User && this.post.User.Photo && this.post.User.Photo.path)
